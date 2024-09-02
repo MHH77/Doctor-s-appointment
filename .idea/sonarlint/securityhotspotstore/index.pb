@@ -4,9 +4,6 @@
 :
 
 .gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
-:
-
-1readme.md,d\d\ddbfd786d2f7a5b01cb998761d4abb064b70d1e9
 9
 	readme.md,2\7\275d783e298228506068436512433d343feb52aa
 w
@@ -21,3 +18,17 @@ N
 src/main/java/com/app/App.java,a\9\a92de6060a9826459008c30a183a878638848544
 S
 #.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
+E
+DoctorAppointment.iml,9\0\90c05fe9230ca2d346b93fc71050ba4f524df24e
+\
+,src/main/java/com/app/model/Appointment.java,7\1\7182a3ff76826400ac76463054f434102661b69c
+W
+'src/main/java/com/app/model/Doctor.java,2\c\2c3d33ec5e58beee0ec63d8d03867f28e58a2f80
+h
+8src/main/java/com/app/model/Enums/AppointmentStatus.java,1\5\15d1391df5c3cdb9ec862f30626f8599bea1de19
+[
++src/main/java/com/app/model/BaseEntity.java,f\e\fe7919ab23f090d2bf400e9cb607253d047ef5ce
+X
+(src/main/java/com/app/model/Patient.java,9\9\99554494a24d0293286a003eae73d0bdc20f1f54
+Y
+)src/main/java/com/app/model/TimeSlot.java,9\f\9f9f53e7d3d8bc003880f27deea62b869b7abb00

@@ -2,13 +2,16 @@ package com.app.model;
 
 
 import jakarta.persistence.*;
-import lombok.Data;
+import lombok.*;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
 
+import java.util.Date;
 import static jakarta.persistence.TemporalType.TIMESTAMP;
 
 @Data
+@ToString
+@RequiredArgsConstructor
 @MappedSuperclass
 public class BaseEntity {
 
@@ -29,4 +32,5 @@ public class BaseEntity {
     @Version
     @Column
     private Integer version;
+
 }
