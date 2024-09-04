@@ -14,11 +14,7 @@ import java.util.List;
 @Builder
 @Entity
 @Table(name = "time_slots")
-public class TimeSlot {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+public class TimeSlot extends BaseEntity{
 
     @ManyToOne
     @JoinColumn(name = "doctor_id")
