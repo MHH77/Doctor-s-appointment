@@ -3,7 +3,7 @@ package com.app.Controller;
 
 import com.app.Service.TimeSlotService;
 import com.app.model.TimeSlot;
-import lombok.extern.slf4j.Slf4j;
+import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -12,14 +12,10 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/time-slots")
-@Slf4j
+@RequiredArgsConstructor
 public class TimeSlotController {
 
     private final TimeSlotService timeSlotService;
-
-    public TimeSlotController(TimeSlotService timeSlotService) {
-        this.timeSlotService = timeSlotService;
-    }
 
     @PostMapping("/add")
     public ResponseEntity<TimeSlot> addTimeSlot(@RequestBody TimeSlot timeSlot) {
