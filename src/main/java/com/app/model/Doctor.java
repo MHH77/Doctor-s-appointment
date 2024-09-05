@@ -12,10 +12,7 @@ import java.util.List;
 @Builder
 @Entity
 @Table(name = "doctors")
-public class Doctor {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+public class Doctor extends BaseEntity{
 
     @Column(nullable = false)
     private String name;

@@ -13,10 +13,7 @@ import java.time.LocalDateTime;
 @Builder
 @Entity
 @Table(name = "appointments")
-public class Appointment {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+public class Appointment extends BaseEntity{
 
     @ManyToOne
     @JoinColumn(name = "time_slot_id")
