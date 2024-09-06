@@ -3,20 +3,17 @@ package com.app.Service.Impl;
 import com.app.Repository.TimeSlotRepo;
 import com.app.Service.TimeSlotService;
 import com.app.model.TimeSlot;
-import lombok.extern.slf4j.Slf4j;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
 @Service
-@Slf4j
+@RequiredArgsConstructor
 public class TimeSlotServiceImpl implements TimeSlotService {
-    private final TimeSlotRepo timeSlotRepository;
 
-    public TimeSlotServiceImpl(TimeSlotRepo timeSlotRepository) {
-        this.timeSlotRepository = timeSlotRepository;
-    }
+    private final TimeSlotRepo timeSlotRepository;
 
     @Override
     public TimeSlot save(TimeSlot timeSlot) {
@@ -30,7 +27,7 @@ public class TimeSlotServiceImpl implements TimeSlotService {
 
     @Override
     public void delete(Long id) {
-         timeSlotRepository.deleteById(id);
+        timeSlotRepository.deleteById(id);
     }
 
     @Override
