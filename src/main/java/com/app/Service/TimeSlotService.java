@@ -11,4 +11,6 @@ public interface TimeSlotService  {
     void delete(Long id);
     Optional<TimeSlot> getById(Long id);
     List<TimeSlot> all();
+
+    void splitTime(TimeSlot timeSlot);
 }
